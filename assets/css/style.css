@@ -121,7 +121,11 @@ img {
 }
 
 .btn--primary {
-  background-color: #e0e0e0;
+  background-color: rgb(253, 114, 0);
+}
+
+.btn--primary:hover{
+  background-color: lawngreen;
 }
 
 .btn:hover {
@@ -134,7 +138,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(95, 92, 92);
   box-shadow: var(--box-shadow);
   z-index: var(--z-fixed);
 }
@@ -230,7 +234,7 @@ img {
 }
 
 .navbar__list a{
-color: #007fce;
+color: #ffffff;
 }
 
 .navbar__list a:hover{
@@ -263,8 +267,8 @@ color: #007fce;
    #79b3f4, 
    #69bff8, 
    #41ccff, 
-   #36d4f3, 
-   #34e6f3, #52f1e7);
+   #28d5f8, 
+   #8ceff7, #fafafa);
    background-size: 500%;
   animation: cardcoloridas 10s infinite;
 }
@@ -302,7 +306,7 @@ color: #007fce;
   row-gap: var(--mr-2);
 }*/
 
-/* BOTONES DE SOCIAL MIOS*/
+/* BOTONES DE SOCIAL*/
 .wrapper .button{
   display: flex;
   flex-direction:row;
@@ -367,7 +371,7 @@ transition: all 0.3s ease-out;
 }
 
 .wrapper .button:hover .icon i{
-color: #fff;
+color: #d30e0e;
 
 }
 
@@ -407,7 +411,7 @@ color: #fff;
 
 /* ============= About ============= */
 .about {
-  background-color: #fafafa;
+  background-color: #f5f0d2;
 }
 
 .about__description {
@@ -427,12 +431,12 @@ color: #fff;
 }
 
 .about__card img{
-width: 90px;
-height: 130px;
+width: 120px;
+height: 122px;
 }
 
 .about__card {
-  background-color: rgb(219, 205, 159);
+  background-color: rgb(253, 248, 233);
   padding: 4rem 2rem 2rem;
   border-radius: 5px;
   box-shadow: var(--box-shadow);
@@ -447,36 +451,6 @@ height: 130px;
   background-color: #f0f0f0;
 }
 
-.about__tags-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  
-  
-}
-
-.about__tag {
-  display: inline-block;
-  padding: .75rem 1.5rem;
-  font-weight: var(--font-semi-bold);
-  font-size: var(--smaller-font-size);
-  background-color: #dddddd;
-  border-radius: 5px;
-      
-}
-
-.about__tag, .about__tags-container{
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.about__tag, .about__tags-title{
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
 .about__card:hover{
   background-image: linear-gradient(235deg,
   #d46600, #ecd506e1, #fda501, #ff0000,
@@ -484,6 +458,36 @@ height: 130px;
   background-size: 500%;
   animation: cardcoloridas 5s infinite;
 }
+
+/* ============= Habilidades ============= */
+.about__tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+}
+
+.about__tag {
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--smaller-font-size);
+  background-color: #10aeec;
+  border-radius: 5px;
+      
+}
+
+.about__tag, .about__tags-container{
+  align-items: center;
+  justify-content: center;  
+}
+
+.about__tag, .about__tags-title{
+  text-align: center;
+  text-transform: uppercase;
+}
+/* ============= ============= */
+
+
 
 @keyframes cardcoloridas {
   0%{
@@ -501,6 +505,13 @@ height: 130px;
 .projects__container {
   gap: 2rem;
 }
+
+/*.projects_section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  max-width: 1024px;
+}*/
 
 .projects__inner {
   margin: 0;
@@ -626,6 +637,7 @@ height: 130px;
     .section {
     padding: 6rem 0 5rem;
   }
+  
 
   .btn__open,
   .btn__close {
