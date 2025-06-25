@@ -294,9 +294,7 @@ color: #ffffff;
 .home__image {
   width: clamp(min(320px, 100%), 85vw, 445px);
   height: auto;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 10px solid #FFFFFF; 
+  margin: 0 auto; 
 }
 
 /*.home__social {
@@ -665,6 +663,8 @@ height: 122px;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
     transform: translateY(3.3rem);
+    border-radius: 50%;
+    borde: 10px solid #F8F8FF;
   }
 
   .home__social {
