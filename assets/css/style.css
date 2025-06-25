@@ -295,6 +295,8 @@ color: #ffffff;
   width: clamp(min(320px, 100%), 85vw, 445px);
   height: auto;
   margin: 0 auto;
+  border-radius: 50%;
+  border: 10px solid #fffff; 
 }
 
 /*.home__social {
